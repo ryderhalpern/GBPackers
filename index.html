@@ -3,9 +3,41 @@
 <link rel="stylesheet" href="mystyle.css">  
 </head>
 <body>
+  <div class="hamburger">
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+</div>
+CSS:
+Code
+
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-5px, -5px);
+}
   <h1 style="color:green;text-align:center;">GreenBay packers</h1>
 <h2>Offence</h2>
-QB:<ol><li>Lordan Love<li>Malik Willis<li>Sean Clifford1</ol>
+QB:<ol><li>Lordan Love<li>Malik Willis<li>Sean Clifford</ol>
 RB:<ol><li>Josh Jacobs<li>Emanuel Wilson<li>MarShawn Lloyd<li>Chris Brooks</ol>
 WR:<ol><li>Jayden Reed<li>Romeo Doubs<li>Christian Watson<li>Donayvion Wicks<li>Bo Melton<li>Mecole hardman<li>Malik Heath<li>Julian Hicks<li>Cornelius Johnson<li> Tulu Griffin</ol>
 TE:<ol><li>Tucker Kraft<li>Luke Musgrave<li>BenSims<li>Messih Swinson</ol>
