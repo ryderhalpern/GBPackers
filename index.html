@@ -110,6 +110,65 @@ body {
 <div class="navbar">
   <a href="#history">History</a>
   <a href="#team stats""center">Team Stats</a>
+
+<div class="tab">
+  <button onclick="openTab('news-content', this)">News</button>
+  <button onclick="openTab('other-content', this)">Other</button>
+</div>
+
+<div id="news-content" class="tabcontent active">
+  <h2>News</h2>
+  <p>This is the news content.</p>
+</div>
+
+<div id="other-content" class="tabcontent">
+  <h2>Other</h2>
+  <p>This is other content.</p>
+</div>
+
+<script>
+function openTab(tabName, btn) {
+  let i, content, buttons;
+
+  content = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < content.length; i++) {
+    content[i].className = "tabcontent";
+  }
+
+  buttons = document.getElementsByClassName("tab");
+  for (i = 0; i < buttons.length; i++) {
+    buttons[i].className = buttons[i].className.replace(" active", "");
+  }
+
+  document.getElementById(tabName).className = "tabcontent active";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   <div class="dropdown">
     <button class="dropbtn">Dropdown 
       <i class="fa fa-caret-down"></i>
